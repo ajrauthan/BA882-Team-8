@@ -17,7 +17,7 @@ def clean_multiple_tables(request):
         # Define project, dataset, and tables to clean
         project_id = "ba882-team8-fall24"
         dataset_id = "mbta_dataset"
-        tables = ["updated_routes", "updated_stops", "updated_vehicles", "updated_trips"]
+        tables = ["updated_routes", "updated_stops", "updated_vehicles", "updated_trips", "predictions", "schedules", "joined_prediction"]
 
         for table_id in tables:
             logging.info(f"Cleaning table {table_id}")
